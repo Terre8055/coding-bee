@@ -174,17 +174,10 @@ a > i{
 
 @media (max-width: 700px){
     h4{
-        font-size: .6rem;
-    }
-
-    .p-serv > div{
-        height: 45%;
+        font-size: .8rem;
     }
     
-    .com-01>i{
-        transform: scale(var(--ggs,2));
-        margin: 10px 15px;
-        /* position: relative */
+    header{
+        height: 75%;
     }
-
 }
