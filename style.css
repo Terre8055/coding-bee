@@ -177,8 +177,8 @@ a > i{
         font-size: .6rem;
     }
 
-    .p-serv{
-        height: 60%;
+    .p-serv > div{
+        height: 45%;
     }
     
     .com-01>i{
