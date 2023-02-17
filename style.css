@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    /* border: 2px solid red; */
+    height: 100vh;
+    /* background: linear-gradient(to top, black, gba(255, 255, 255, 0.541)); */
+    background-color: black;
+
+}
+
+
+
+.nav {
+    /* border: 2px solid red; */
+    height: 10%;
+    color: black;
+    font-family: 'Roboto Slab', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+}
+
+.home-icon{
+    position: absolute;
+    left: 0;
+}
+
+.nav > div{
+   /* border: 2px solid white; */
+   padding: 8px 12px;
+   margin: 5px 8px;
+   /* font-style: italic; */
+   /* box-shadow: 1px 1px 1px grey; */
+   cursor: pointer;
+   font-size: .9rem;
+   font-weight: 700;
+}
+
+.nav-links:hover{
+    background-color: rgba(255, 255, 255, 0.473);
+    color: black;
+    transition: 1s;
+    border: 1px solid black;
+    border-radius: 3px 3px;
+}
+
+@media (max-width:700){
+    *{
+        font-size: 8px;
+    }
+}
+
+header{
+    /* border: 2px solid white; */
+    height: 90%;
+    margin: 15px 45px;
+    color: white;
+    /* width: 100vw; */
+    padding: 15px 15px;
+}
+
+.intro{
+    font-family:'Roboto Slab', serif;
+
+}
+
+.intro-list{
+    margin-top: 5px;
+    display: flex;
+    margin: 8px 8px;
+    gap: 15px;
+    font-size: 1.5rem;
+}
+
+.iconify{
+    /* border: 2px solid white; */
+    height: 20vh;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.iconify>i{
+    cursor:grabbing;
+    transform: scale(var(--ggs,3));
+
+}
+
+
+.portfolio{
+    /* border: 2px solid green; */
+    height: 100vh;
+    background: url(./images/wave-haikei.svg)
+}
+
+.p-intro{
+    margin: 35px 55px;
+    font-family:'Roboto Slab', serif;
+
+}
+
+.p-serv{
+    /* border: 2px solid red; */
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 25px;
+    gap: 8px;
+}
+
+.p-serv > div{
+    flex: 1;
+    background-color: rgb(179, 178, 176);
+    height: 60%;
+    border-radius: 15px;
+    /* margin: 15px 15px; */
+}
+
+.p-serv > div:hover{
+    box-shadow: 5px 5px 3px grey;
+}
+
+.com-01>i{
+    transform: scale(var(--ggs,2));
+    margin: 15px 15px;
+    /* position: relative */
+}
+
+.comm{
+    /* padding: 15px 15px; */
+    font-family:'Roboto Slab', serif;
+    padding: 5px 5px;
+    margin: 5px 15px;
+
+}
+
+footer > h3{
+    display: flex;
+    gap: 10px;
+    margin: 15px 15px;
+    justify-content: center;
+    font-family:'Roboto Slab', serif;
+}
+
+a > i{
+    position: absolute;
+    right: 50%;
+    height: 45px;
+    font-size: 2rem;
+}
