@@ -7,7 +7,11 @@
     /* border: 2px solid red; */
     height: 100vh;
     /* background: linear-gradient(to top, black, gba(255, 255, 255, 0.541)); */
-    background-color: black;
+    background: linear-gradient(to right, rgba(234, 98, 98, 1), orange);
+    border-radius: 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(.5px);
+    -webkit-backdrop-filter: blur(.5px);
 
 }
 
@@ -48,19 +52,21 @@
     border-radius: 3px 3px;
 }
 
-@media (max-width:700){
-    *{
-        font-size: 8px;
-    }
-}
 
 header{
-    /* border: 2px solid white; */
-    height: 90%;
-    margin: 15px 45px;
+    /* border: 2px solid red; */
+    height: 60%;
+    margin: 8px 8px;
     color: white;
     /* width: 100vw; */
-    padding: 15px 15px;
+    padding: 25px 25px;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-shadow: 5px;
 }
 
 .intro{
@@ -74,6 +80,7 @@ header{
     margin: 8px 8px;
     gap: 15px;
     font-size: 1.5rem;
+    
 }
 
 .iconify{
@@ -86,7 +93,7 @@ header{
 }
 
 .iconify>i{
-    cursor:grabbing;
+    cursor:pointer;
     transform: scale(var(--ggs,3));
 
 }
@@ -94,12 +101,20 @@ header{
 
 .portfolio{
     /* border: 2px solid green; */
+    padding: 0;
     height: 100vh;
-    background: url(./images/wave-haikei.svg)
+    /* background: linear-gradient(to left, rgba(0, 153, 255, 0.678), white); */
+    /* From https://css.glass */
+    background: linear-gradient(to right, rgba(234, 98, 98, 1), orange);
+    border-radius: 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(.5px);
+    -webkit-backdrop-filter: blur(.5px);
+    color: white;
 }
 
 .p-intro{
-    margin: 35px 55px;
+    padding: 35px 55px;
     font-family:'Roboto Slab', serif;
 
 }
@@ -115,15 +130,18 @@ header{
 
 .p-serv > div{
     flex: 1;
-    background-color: rgb(179, 178, 176);
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-shadow: 5px;
     height: 60%;
     border-radius: 15px;
     /* margin: 15px 15px; */
 }
 
-.p-serv > div:hover{
-    box-shadow: 5px 5px 3px grey;
-}
 
 .com-01>i{
     transform: scale(var(--ggs,2));
@@ -152,4 +170,10 @@ a > i{
     right: 50%;
     height: 45px;
     font-size: 2rem;
+}
+
+@media (max-width: 700px){
+    h4{
+        font-size: .6rem;
+    }
 }
