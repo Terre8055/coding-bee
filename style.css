@@ -13,6 +13,7 @@
     backdrop-filter: blur(.5px);
     -webkit-backdrop-filter: blur(.5px);
 
+
 }
 
 
@@ -139,8 +140,11 @@ header{
     text-shadow: 5px;
     height: 60%;
     border-radius: 15px;
+    transition: 0.05ms;
     /* margin: 15px 15px; */
+    align-items: center;
 }
+
 
 
 .com-01>i{
@@ -172,7 +176,20 @@ a > i{
     font-size: 2rem;
 }
 
-@media (max-width: 700px){
+img:hover{
+    height: 110px;
+    width: 110px;
+    cursor: pointer;
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    transition: 0.05ms;
+}
+
+@media (min-width: 300px) and (max-width: 700px){
     h4{
         font-size: .8rem;
     }
@@ -180,4 +197,54 @@ a > i{
     header{
         height: 75%;
     }
+
+    .p-serv > div{
+        height: 50%;
+    }
+
+
+    img{
+        height: 40px;
+        width: 40px;
+        /* padding-bottom: 25px; */
+        
+    }
+
+    .iconify{
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+    
+    
 }
+
+@media (min-width: 100px) and (max-width: 299px){
+    h1{
+        font-size: 1rem;
+    }
+
+    img{
+        height: 20px;
+        width: 20px;
+        /* padding-bottom: 25px; */
+        
+    }
+
+    .p-serv > div{
+        height: 50%;
+    }
+
+    h4{
+        font-size: .8rem;
+    }
+    
+    header{
+        height: 75%;
+    }
+
+    .iconify{
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+}
+
