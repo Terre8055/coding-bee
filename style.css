@@ -86,7 +86,7 @@ header{
 .iconify{
     /* border: 2px solid white; */
     height: 20vh;
-    margin-top: 70px;
+    margin-top: 55px;
     display: flex;
     justify-content: center;
     align-items: center
@@ -94,7 +94,7 @@ header{
 
 .iconify>i{
     cursor:pointer;
-    transform: scale(var(--ggs,3));
+    transform: scale(var(--ggs,2));
 
 }
 
